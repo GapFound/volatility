@@ -219,7 +219,7 @@ st.markdown("""
         }
     </style>
     <div class="footer">
-        <a href="https://gapfound.github.io/GAP_Finder_dipendent_files/disclaimer.html" target="_blank">Data Disclaimer</a>
+        <a href="https://gapfound.github.io/GAP_Finder_dipendent_files/disclaimer_volatility.html" target="_blank">Data Disclaimer</a>
     </div>
 """, unsafe_allow_html=True)                                              
                               
