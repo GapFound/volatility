@@ -98,7 +98,7 @@ with col1:
         if len(st.session_state['dati_storici']) > 0:
                     dati_custom = st.session_state['dati_storici'][giorni:].copy()
                     dati_custom['rendimento'] = (dati_custom['Close'].pct_change()) * 100
-                    volatility = dati_custom['rendimento'].std()
+                    volatility = dati_custom['rendimento'].std(ddof=0)
                     st.session_state['volatility'] = volatility
                     volatility_ann = volatility*np.sqrt(252)
                     
