@@ -199,8 +199,29 @@ if st.session_state['ricerca_premuto']==True and st.session_state["nome_ticker"]
                     
                     
                 
-              
-                                
+st.markdown("""
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #e0e0e0; /* Grigio chiaro neutro */
+            padding: 6px;
+        }
+        .footer a {
+            font-size: 12px; /* Scritta più piccola */
+            text-decoration: none;
+            color: blue; /* Puoi cambiare il colore del link se lo desideri */
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <div class="footer">
+        <a href="github.com/GapFound/GAP_Finder_dipendent_files/disclaimer.html" target="_blank">Data Disclaimer</a>
+    </div>
+""", unsafe_allow_html=True)                                              
                               
                             
     
