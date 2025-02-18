@@ -111,7 +111,7 @@ with col1:
                     st.session_state['dati_storici']['rolling'] = st.session_state['dati_storici']['rendimento'].rolling(window=(giorni*-1)).std(ddof=0)
                     
             
-                    current = datetime.today()-timedelta(hours=6) # tolgo 6 ore (New York) dall'orario della data corrente
+                    current = datetime.today()-timedelta(hours=5) # tolgo 6 ore (New York) dall'orario della data corrente
                     current_date = datetime.today().date() # solo la data corrente
                     day = current.strftime('%A') # mi indica che giorno è attualmente (monday etc..)
                     
